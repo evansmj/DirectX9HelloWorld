@@ -27,6 +27,13 @@
 //SAFE_DELETE MACRO used to safely delete pointer objects from memory
 #define SAFE_DELETE(x) { if(x) delete x; x = NULL; }
 
+namespace d3dColors
+{
+	const D3DCOLOR RED = D3DCOLOR_ARGB(255, 255, 0, 0);
+	const D3DCOLOR LIME = D3DCOLOR_ARGB(255, 0, 255, 0);
+	const D3DCOLOR BLUE = D3DCOLOR_ARGB(255, 0, 0, 255);
+}
+
 //D3DERR check MACRO, used to display message box containing
 //line #, and error message from HRESULT returned by function call
 #ifdef _DEBUG
