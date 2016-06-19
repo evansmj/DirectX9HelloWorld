@@ -263,6 +263,8 @@ bool DXApp::InitDirect3D()
 	viewport.MinZ = 0;
 	viewport.MaxZ = 1;
 
+	m_pDevice3D->SetViewport(&viewport);
+
 	//If this all succeeds return true
 	return true;
 }
