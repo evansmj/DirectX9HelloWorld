@@ -32,6 +32,7 @@ namespace d3dColors
 	const D3DCOLOR RED = D3DCOLOR_ARGB(255, 255, 0, 0);
 	const D3DCOLOR LIME = D3DCOLOR_ARGB(255, 0, 255, 0);
 	const D3DCOLOR BLUE = D3DCOLOR_ARGB(255, 0, 0, 255);
+	const D3DCOLOR CORN_FLOWER_BLUE = D3DCOLOR_ARGB(255, 100, 149, 237);
 }
 
 //D3DERR check MACRO, used to display message box containing

@@ -254,6 +254,15 @@ bool DXApp::InitDirect3D()
 	HR(m_pDirect3D->CreateDevice(D3DADAPTER_DEFAULT,
 		m_DevType, m_hAppWindow, vp, &m_d3dpp, &m_pDevice3D));
 
+	D3DVIEWPORT9 viewport;
+	ZeroMemory(&viewport, sizeof(D3DVIEWPORT9));
+	viewport.X = 0;
+	viewport.Y = 0;
+	viewport.Width = m_ClientWidth;
+	viewport.Height = m_ClientHeight;
+	viewport.MinZ = 0;
+	viewport.MaxZ = 1;
+
 	//If this all succeeds return true
 	return true;
 }

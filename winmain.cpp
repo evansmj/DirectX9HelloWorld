@@ -63,7 +63,7 @@ void TestApp::Render()
 {
 	//D3DCOLOR: Cornflower Blue = RGB(100, 149, 237)
 	//Clears the back buffer
-	m_pDevice3D->Clear(0, 0, D3DCLEAR_TARGET, d3dColors::BLUE, 1.0f, 0);
+	m_pDevice3D->Clear(0, 0, D3DCLEAR_TARGET, d3dColors::CORN_FLOWER_BLUE, 1.0f, 0);
 
 
 
